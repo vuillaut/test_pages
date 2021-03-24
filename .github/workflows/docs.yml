@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: copy newdocs into docs
-      run: cp newdocs/*.html docs/; echo `ls docs/`;
+      run: mkdir docs; echo "hello world" >> docs/index.html;
       
     - name: Deploy to gihub pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
